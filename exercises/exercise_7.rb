@@ -13,7 +13,7 @@ puts "----------"
 
 puts "What would you like to name the store?"
 name = gets.chomp
-@store = Store.create(name: name)
+@store = Store.create(name: name, annual_revenue: 30000)
 
 @store.errors.each do |message|
   pp message
